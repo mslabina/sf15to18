@@ -4,6 +4,17 @@
 
 This repository contains some small code snippets in diffenent programming languages, that all have one purpose: converting Salesforce's case sensitive 15-digit Ids into the 18-digit Ids which aren't case sensitive. This might come in handy if you are working with a file system that isn't case sensitive and you want to write information to a file using the salesforce ids as filename for example.
 
+## Usage
+
+### Adding sf15to18.gs to Google Spreadsheets 
+
+1. Open or create a spreadsheet on Google Spreadsheets
+2. Go to *Tools -> Script editor*
+3. Select *Blank Project*
+4. Copy the contents of `sf15to18.gs` to the script editor
+5. Save the script as `sf15to18`
+6. Use it in your spreadsheet. If you want to convert the value of *Cell B1*, you need to use the following formula for example: `=sf15to18(B1)`
+
 ## How it works
 
 Getting the case insensitive 18-digit Id is an easy process which basically works like this:
