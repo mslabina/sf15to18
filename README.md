@@ -6,12 +6,21 @@ This repository contains some small code snippets in diffenent programming langu
 
 ## Usage
 
+### Adding sf15to18.bas to OpenOffice/LibreOffice
+
+1. Open or create a spreadsheet in OpenOffice/LibreOffice
+2. Press *Alt-F11* and create a new Basic Macro
+3. Create a new Macro
+4. Copy and paste the contents of `sf15to18.bas` to the editor
+5. Save the macro
+6. Use it in your spreadsheet. If you want to convert the value of *Cell B1*, you need to use the following formula for example: `=sf15to18(B1)`
+
 ### Adding sf15to18.gs to Google Spreadsheets 
 
 1. Open or create a spreadsheet on Google Spreadsheets
 2. Go to *Tools -> Script editor*
 3. Select *Blank Project*
-4. Copy the contents of `sf15to18.gs` to the script editor
+4. Copy and paste the contents of `sf15to18.gs` to the script editor
 5. Save the script as `sf15to18`
 6. Use it in your spreadsheet. If you want to convert the value of *Cell B1*, you need to use the following formula for example: `=sf15to18(B1)`
 
