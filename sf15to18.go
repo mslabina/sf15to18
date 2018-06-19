@@ -15,7 +15,7 @@ func Convert(id string) (string, error) {
 		return "", errors.New("The given id isn't 15 characters long.")
 	}
 
-	var alphabet string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ012345"
+	const alphabet string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ012345"
 	var longId bytes.Buffer
 
 	// Write input id to output buffer as a starting point
