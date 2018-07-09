@@ -11,6 +11,7 @@ This repository contains some small code snippets in diffenent programming langu
  - Go
  - OpenOffice/LibreOffice Macro
  - Google Spreadsheets script
+ - PHP
 
 ## Usage
 
