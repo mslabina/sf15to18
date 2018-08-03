@@ -1,29 +1,20 @@
 <?php
-function sfdc15to18($id, $objectPrefix = null)
+function sfdc15to18($id)
 {//takes a 15 character case sensetive Id and turns it into an 18 character case insensative Id
 
     $charLibrary = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ012345';
 
-    //check the id is at least 15 digets long
-    if(strlen($id) < 15)
-    {
-        throw new Exception("'id' must be at least 15 characters long");
+    //check the id is 18 digets long
+    if(strlen($id) != 15)
+    {//it is, exit
+        return $id;
     }
 
-    if($objectPrefix != null && strlen($objectPrefix) != 3)
+    //check the id is 15 digets long
+    if(strlen($id) != 15)
     {
-        throw new Exception("'objectPrefix' must be null or 3 characters long");
+        throw new Exception("'id' must be exactly least 15 characters long");
     }
-
-    //check that the objectPrefix matches, if it has been set
-    if($objectPrefix != null && substr($id, 0, 3) != $objectPrefix)
-    {
-        throw new Exception("'id' does not have the correct prefix: '".substr($id, 0, 3)."' (should be '".$objectPrefix."')");
-    }
-
-    //incase we are already being given an 18 length id, pull the first 15 out
-    $id = substr($id, 0, 15);
-
     //generate the last 3 digets
     for($i = 0; $i < 3; $i++)
     {
@@ -41,6 +32,7 @@ function sfdc15to18($id, $objectPrefix = null)
             }
         }
 
+        //add our newly generated character to the string
         $id .= substr($charLibrary, $charLookup, 1);
     }
 
