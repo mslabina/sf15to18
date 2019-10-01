@@ -15,6 +15,15 @@ This repository contains some small code snippets in diffenent programming langu
 
 ## Usage
 
+### Adding sf15to18.bas to Excel
+
+1. Open or create a spreadsheet in Excel
+2. Go to *Tools > Macro > Visual Basic Editor*
+3. Right click on *This Workbook* and select *Insert > Module*
+4. Copy and paste the contents of `sf15to18.bas` to the editor
+5. Save the macro
+6. Use it in your spreadsheet. If you want to convert the value of *Cell B1*, you need to use the following formula for example: `=sf15to18(B1)`
+
 ### Adding sf15to18.bas to OpenOffice/LibreOffice
 
 1. Open or create a spreadsheet in OpenOffice/LibreOffice
