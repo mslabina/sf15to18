@@ -4,6 +4,8 @@
 
 This repository contains some small code snippets in diffenent programming languages, that all have one purpose: converting Salesforce's case sensitive 15-digit Ids into the 18-digit Ids which aren't case sensitive. This might come in handy if you are working with a file system that isn't case sensitive and you want to write information to a file using the salesforce ids as filename for example.
 
+If you want to read more about the usage and conversion of Salesforce IDs or want to use an online converter based on the JavaScript implementation of this repository, go check out [the related article on my blog markus.codes](https://markus.codes/2021/02/03/salesforce-id-15-18-digit-lengths)
+
 ## Available Versions
 
  - JavaScript
