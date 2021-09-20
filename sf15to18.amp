@@ -1,0 +1,21 @@
+SET @ID = "0011X00000xxXXX"
+
+FOR @i = 0 TO 2 DO
+
+    SET @f = 0
+
+    FOR @j = 0 TO 4 DO
+
+        SET @c = SUBSTRING(@ID, ADD(ADD(@j,1), MULTIPLY(@i, 5)), 1)
+
+        SET @x = IIF(@j == 0, ADD(@j, 1), MULTIPLY(@x, 2))
+
+        SET @f = IIF(NOT EMPTY(RegExMatch(@c, "[A-Z]", 0)), ADD(@f, @x), @f)
+
+    NEXT @j
+
+    SET @ID = CONCAT(@ID, SUBSTRING('ABCDEFGHIJKLMNOPQRSTUVWXYZ012345', ADD(@f, 1), 1));
+
+NEXT @i
+
+OUTPUTLINE(CONCAT(@ID))
