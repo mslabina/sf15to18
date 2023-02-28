@@ -18,7 +18,7 @@ def sf15to18 (id_):
 			c = id_[i * 5 + j]
 
 			# Check if c is an uppercase letter
-			if 'A' <= c <= 'Z':
+			if c.isupper():
 				# Set a 1 at the character's position in the reversed segment
 				f += 1 << j
 
