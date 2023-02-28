@@ -10,7 +10,7 @@ function sf15to18(id) {
 
 		// For every 5-digit block of the given id
 		for (var j = 0; j < 5; j++) {
-			// Assign the j-th chracter of the i-th 5-digit block to c
+			// Assign the j-th character of the i-th 5-digit block to c
 			var c = id.charAt(i * 5 + j);
 
 			// Check if c is an uppercase letter
