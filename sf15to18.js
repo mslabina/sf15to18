@@ -12,7 +12,7 @@ module.exports = (id) => {
 
 		// For every 5-digit block of the given id
 		for (let j = 0; j < 5; j++) {
-			// Assign the j-th chracter of the i-th 5-digit block to c
+			// Assign the j-th character of the i-th 5-digit block to c
 			let c = id.charAt(i * 5 + j);
 
 			// Check if c is an uppercase letter

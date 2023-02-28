@@ -7,7 +7,7 @@ Function sf15to18(id As String) As String
 	
 			' For every 5-digit block of the given id
 			For j = 0 To 4
-				' Assign the j-th chracter of the i-th 5-digit block to c
+				' Assign the j-th character of the i-th 5-digit block to c
 				Dim c
 				c = Asc(Mid(id, (i * 5 + j + 1), 1))
 	

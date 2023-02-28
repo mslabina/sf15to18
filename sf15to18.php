@@ -1,5 +1,5 @@
 <?php
-//takes a 15 character case sensetive Id and turns it into an 18 character case insensitive Id
+//takes a 15 character case sensitive Id and turns it into an 18 character case insensitive Id
 function sfdc15to18($id)
 {
     $charLibrary = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ012345';
@@ -24,7 +24,7 @@ function sfdc15to18($id)
         // For every 5-digit block of the given id
         for($j = 0; $j < 5; $j++)
         {
-            // Assign the j-th chracter of the i-th 5-digit block to c
+            // Assign the j-th character of the i-th 5-digit block to c
             $charFound = substr($id, (($i * 5) + $j), 1);
 
             // check if this character is an uppercase letter

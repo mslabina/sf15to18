@@ -14,7 +14,7 @@ def sf15to18 (id):
 
 		# For every 5-digit block of the given id
 		for j in range(0,5):
-			# Assign the j-th chracter of the i-th 5-digit block to c
+			# Assign the j-th character of the i-th 5-digit block to c
 			c = id[i * 5 + j]
 
 			# Check if c is an uppercase letter
